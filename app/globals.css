@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main_color: #F6E7E0;
+  --sub_color: #7D6C70;
+  --accent_color: #B78791;
+  --bg_color1: #FFF4F0;
+  --bg_color2: #E8DDDC;
+}
+
+body {
+  color: var(--sub_color);
+  background: var(--main_color);
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 360px;
+}
+
+/* 共通 */
+.section_title {
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.section_subtitle {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.section {
+  position: relative;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_wrap {
+  max-width: 1024px;
+  padding: 80px 16px;
+}
+
+.footprins_img {
+  position: absolute;
+  z-index: 20;
+  max-width: 1024px;
+  width: 100%;
+  padding: 0 16px;
+  bottom: -60px;
+}
+
+@media (min-width: 768px) {
+  .footprins_img {
+    bottom: -92px;
+  }
+}
+
+.footprins_img_right {
+  display: flex;
+  justify-content: end;
+}
+
+/* swiper */
+.swiper-pagination-bullet-active {
+  background:  var(--accent_color) !important;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.swiper-pagination-bullet:hover {
+  cursor: pointer !important;
+}
