@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import FadeInWhenVisible from '../FadeInWhenVisible/FadeInWhenVisible'
 import AnimatedFootprints from '../AnimatedFootprints/AnimatedFootprints'
@@ -78,7 +80,6 @@ const Like = () => {
       </div>
       <div className="footprins_img footprins_img_right">
         <AnimatedFootprints
-          className=""
           animatedSrc="/footprints3.gif"
           alt="足跡"
         />

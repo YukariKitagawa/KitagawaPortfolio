@@ -38,7 +38,6 @@ const Future = () => {
       </div>
       <div className="footprins_img">
         <AnimatedFootprints
-          className=""
           animatedSrc="/footprints6.gif"
           alt="足跡"
         />

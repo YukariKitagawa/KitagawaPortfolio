@@ -17,7 +17,6 @@ const About = () => {
       </div>
       <div className="footprins_img">
         <AnimatedFootprints
-          className=""
           animatedSrc="/footprints2.gif"
           alt="足跡"
         />

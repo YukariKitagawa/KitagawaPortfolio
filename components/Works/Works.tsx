@@ -154,7 +154,6 @@ const Works = () => {
         </FadeInWhenVisible>
         <div className="footprins_img">
           <AnimatedFootprints
-            className=""
             animatedSrc="/footprints4.gif"
             alt="足跡"
           />

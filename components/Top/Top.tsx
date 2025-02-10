@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import AnimatedFootprints from '../AnimatedFootprints/AnimatedFootprints'
 import * as motion from 'framer-motion/client'

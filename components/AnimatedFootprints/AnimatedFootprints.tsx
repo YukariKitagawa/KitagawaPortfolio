@@ -7,10 +7,10 @@ import { useInView } from 'framer-motion'
 interface AnimatedFootprintsProps {
   animatedSrc: string
   alt: string
-  className: string
+  className?: string
 }
 
-const AnimatedFootprints: React.FC<AnimatedFootprintsProps> = ({ animatedSrc, alt, className }) => {
+const AnimatedFootprints: React.FC<AnimatedFootprintsProps> = ({ animatedSrc, alt, className = "" }) => {
   const [isAnimated, setIsAnimated] = useState(false)
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
@@ -25,7 +25,7 @@ const AnimatedFootprints: React.FC<AnimatedFootprintsProps> = ({ animatedSrc, al
     <div ref={ref} className={className}>
       {isAnimated && (
         <Image
-          src={animatedSrc || ''}
+          src={animatedSrc}
           alt={alt}
           width={183}
           height={196}
